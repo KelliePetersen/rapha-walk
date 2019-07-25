@@ -1,0 +1,29 @@
+.hero {
+  position: relative;
+  width: 90vw;
+  height: 85vh;
+  margin: 5vw auto;
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__content-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+
+  &__link {
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+    background-color: var(--blue);
+  }
+}

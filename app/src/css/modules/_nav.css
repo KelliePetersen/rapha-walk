@@ -1,0 +1,14 @@
+.nav {
+
+  &__link {
+    display: block;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+}

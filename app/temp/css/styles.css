@@ -350,7 +350,8 @@ template {
 }
 
 :root {
-  --black: #000;
+  --blue: #2c8dd5;
+  --white: #f9f9f9;
 }
 
 body {
@@ -424,4 +425,49 @@ img {
     width: 36.75px;
     height: 44px;
     background-position: 0 97.91111111111111%;
+  }
+
+.nav__link {
+    display: block;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+
+.hero {
+  position: relative;
+  width: 90vw;
+  height: 85vh;
+  margin: 5vw auto;
+}
+
+.hero__image {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+.hero__content-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+
+.hero__link {
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-color: var(--blue);
   }
