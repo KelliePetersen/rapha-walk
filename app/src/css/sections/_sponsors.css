@@ -1,0 +1,35 @@
+.sponsors {
+  margin: 80px 0;
+  text-align: center;
+
+  @mixin atMedium {
+    margin: 120px 0;
+  }
+
+  @mixin atLarge {
+    margin: 200px 0;
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @mixin atMedium {
+      margin-top: 80px;
+    }
+  }
+
+  &__section {
+    margin: 10px 30px;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  &__image {
+    display: block;
+    height: 200px;
+    background-color: var(--light-gray);
+  }
+}

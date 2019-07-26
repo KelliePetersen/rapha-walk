@@ -36,4 +36,10 @@
       display: block;
     }
   }
+
+  &--hidden-at-l {
+    @mixin atLarge {
+      display: none;
+    }
+  }
 }
