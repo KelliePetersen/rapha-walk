@@ -12,6 +12,18 @@
     }
   }
 
+  &__short-line {
+    width: 35px;
+    height: 1.5px;
+    background-color: var(--dark-gray);
+    margin: 0 auto 35px auto;
+    @mixin atMedium {
+      width: 70px;
+      height: 3px;
+
+    }
+  }
+
   &--hidden-at-s {
     display: none;
     @mixin atMedium {

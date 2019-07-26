@@ -1,0 +1,43 @@
+.intro {
+  display: grid;
+  margin-top: 70px;
+  text-align: center;
+
+  @mixin atMedium {
+    margin-top: 110px;
+  }
+
+  @mixin atLarge {
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    max-width: 1250px;
+    margin: 250px auto 300px auto;
+  }
+
+  &__image {
+    display: block;
+    position: relative;
+    width: 80%;
+    max-width: 530px;
+    margin: 10px auto -10vw auto;
+    z-index: 2;
+
+    @mixin atLarge {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  &__textbox {
+    position: relative;
+  }
+
+  &__line {
+    @mixin atLarge {
+      position: absolute;
+      top: 22px;
+      left: -100px;
+    }
+  }
+}

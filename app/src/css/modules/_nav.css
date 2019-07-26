@@ -12,11 +12,24 @@
   }
 
   &__link--black {
-    color: var(--black);
-    border: 1.5px solid var(--black);
+    color: var(--dark-gray);
+    border: 1.5px solid var(--dark-gray);
     padding: 15px;
     font-size: 0.75em;
     letter-spacing: 3px;
     font-weight: 600;
+    margin: 50px auto 70px auto;
+
+    @mixin atMedium {
+      width: 240px;
+      font-size: 1em;
+      padding: 20px;
+      margin-bottom: 120px;
+    }
+
+    @mixin atLarge {
+      margin-left: 0;
+      margin-bottom: 0;
+    }
   }
 }

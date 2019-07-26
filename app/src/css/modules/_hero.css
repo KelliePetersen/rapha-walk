@@ -1,11 +1,13 @@
 .hero {
   position: relative;
-  width: calc(100vw - 40px);
+  width: calc(100% - 20px);
   height: 80vh;
-  margin: 20px auto;
+  margin: 10px auto;
 
   @mixin atMedium {
     height: 96vh;
+    margin-top: 20px;
+    width: calc(100% - 40px);
   }
 
   &__image {
