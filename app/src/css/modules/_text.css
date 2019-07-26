@@ -51,4 +51,8 @@
       letter-spacing: 1px;
     }
   }
+
+  &--light {
+    color: var(--light-gray);
+  }
 }

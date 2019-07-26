@@ -11,9 +11,7 @@
     margin: 0 auto;
   }
 
-  &__link--black {
-    color: var(--dark-gray);
-    border: 1.5px solid var(--dark-gray);
+  &--small {
     padding: 15px;
     font-size: 0.75em;
     letter-spacing: 3px;
@@ -24,6 +22,7 @@
       width: 240px;
       font-size: 1em;
       padding: 20px;
+      margin-top: 80px;
       margin-bottom: 120px;
     }
 
@@ -31,5 +30,15 @@
       margin-left: 0;
       margin-bottom: 0;
     }
+  }
+
+  &--black {
+    color: var(--dark-gray);
+    border: 1.5px solid var(--dark-gray);
+  }
+
+  &--white {
+    background-color: var(--white);
+    color: var(--black);
   }
 }
