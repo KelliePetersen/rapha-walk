@@ -1,0 +1,28 @@
+.object {
+
+  &__line {
+    width: 60px;
+    height: 2px;
+    background-color: var(--white);
+    margin: 0 auto;
+    @mixin atMedium {
+      width: 100px;
+      height: 3px;
+      margin-top: 30px;
+    }
+  }
+
+  &--hidden-at-s {
+    display: none;
+    @mixin atMedium {
+      display: block;
+    }
+  }
+
+  &--hidden-at-sm {
+    display: none;
+    @mixin atLarge {
+      display: block;
+    }
+  }
+}

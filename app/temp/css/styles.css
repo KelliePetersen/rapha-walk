@@ -350,8 +350,10 @@ template {
 }
 
 :root {
+  --black: #4d4d4d;
   --blue: #2c8dd5;
   --white: #f9f9f9;
+  --light-gray: #f2f2f2;
 }
 
 body {
@@ -430,27 +432,82 @@ img {
 .nav__link {
     display: block;
     width: 200px;
-    padding: 20px;
     text-align: center;
-    vertical-align: middle;
     color: var(--white);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin: 0 auto;
+  }
+
+.nav__link--black {
+    color: var(--black);
+    border: 1.5px solid var(--black);
+    padding: 15px;
+    font-size: 0.75em;
     letter-spacing: 3px;
+    font-weight: 600;
+  }
+
+.object__line {
+    width: 60px;
+    height: 2px;
+    background-color: var(--white);
+    margin: 0 auto;
+  }
+
+@media (min-width: 760px) {
+
+.object__line {
+      width: 100px;
+      height: 3px;
+      margin-top: 30px
+  }
+  }
+
+.object--hidden-at-s {
+    display: none;
+  }
+
+@media (min-width: 760px) {
+
+.object--hidden-at-s {
+      display: block
+  }
+  }
+
+.object--hidden-at-sm {
+    display: none;
+  }
+
+@media (min-width: 1200px) {
+
+.object--hidden-at-sm {
+      display: block
+  }
   }
 
 .hero {
   position: relative;
-  width: 90vw;
-  height: 85vh;
-  margin: 5vw auto;
+  width: calc(100vw - 40px);
+  height: 80vh;
+  margin: 20px auto;
 }
+
+@media (min-width: 760px) {
+
+.hero {
+    height: 96vh
+}
+  }
 
 .hero__image {
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: 50% bottom;
+       object-position: 50% bottom;
   }
 
 .hero__content-box {
@@ -461,13 +518,126 @@ img {
             transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+    min-width: 300px;
+    width: 90%;
+  }
+
+@media (min-width: 760px) {
+
+.hero__content-box {
+      top: 45%
+  }
+  }
+
+.hero__preheading {
+    letter-spacing: 3px;
+  }
+
+@media (min-width: 760px) {
+
+.hero__preheading {
+      font-size: 1.25em
+  }
+  }
+
+.hero__heading {
+    font-size: 3em;
+    letter-spacing: 3px;
+    font-weight: 400;
+  }
+
+@media (min-width: 760px) {
+
+.hero__heading {
+      font-size: 5em;
+      letter-spacing: 5px;
+      margin: 40px auto
+  }
+  }
+
+@media (min-width: 1200px) {
+
+.hero__heading {
+      font-size: 6em
+  }
+  }
+
+.hero__subheading {
+    display: block;
+    font-weight: 200;
+  }
+
+@media (min-width: 760px) {
+
+.hero__subheading {
+      display: inline
+  }
+  }
+
+.hero__text {
+    font-size: 1.125em;
+    letter-spacing: 2px;
+    font-weight: 200;
+  }
+
+@media (min-width: 760px) {
+
+.hero__text {
+      font-size: 1.25em
+  }
   }
 
 .hero__link {
+    background-color: var(--blue);
+    padding: 20px;
+    margin-top: 80px;
+  }
+
+.hero__mobile-link {
     position: absolute;
     left: 50%;
     bottom: -30px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     background-color: var(--blue);
+    padding: 20px;
+  }
+
+@media (min-width: 760px) {
+
+.hero__mobile-link {
+      display: none
+  }
+  }
+
+.hero__rapha-logo {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+  }
+
+.hero__ehl-logo {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    color: var(--light-gray);
+    font-weight: 200;
+    letter-spacing: 2px;
+  }
+
+.hero__ehl-logo__span {
+      display: block;
+      font-weight: 400;
+      margin: 5px 0;
+    }
+
+.hero--hidden {
+    display: none;
+  }
+
+@media (min-width: 760px) {
+
+.hero--hidden {
+      display: initial
+  }
   }

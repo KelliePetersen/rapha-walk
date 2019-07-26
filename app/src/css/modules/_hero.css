@@ -1,13 +1,18 @@
 .hero {
   position: relative;
-  width: 90vw;
-  height: 85vh;
-  margin: 5vw auto;
+  width: calc(100vw - 40px);
+  height: 80vh;
+  margin: 20px auto;
+
+  @mixin atMedium {
+    height: 96vh;
+  }
 
   &__image {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: 50% bottom;
   }
 
   &__content-box {
@@ -17,13 +22,95 @@
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+    min-width: 300px;
+    width: 90%;
+    @mixin atMedium {
+      top: 45%;
+    }
+  }
+
+  &__preheading {
+    letter-spacing: 3px;
+    @mixin atMedium {
+      font-size: 1.25em;
+    }
+  }
+
+  &__heading {
+    font-size: 3em;
+    letter-spacing: 3px;
+    font-weight: 400;
+    @mixin atMedium {
+      font-size: 5em;
+      letter-spacing: 5px;
+      margin: 40px auto;
+    }
+    @mixin atLarge {
+      font-size: 6em;
+    }
+  }
+
+  &__subheading {
+    display: block;
+    font-weight: 200;
+    @mixin atMedium {
+      display: inline;
+    }
+  }
+
+  &__text {
+    font-size: 1.125em;
+    letter-spacing: 2px;
+    font-weight: 200;
+    @mixin atMedium {
+      font-size: 1.25em;
+    }
   }
 
   &__link {
+    background-color: var(--blue);
+    padding: 20px;
+    margin-top: 80px;
+  }
+
+  &__mobile-link {
     position: absolute;
     left: 50%;
     bottom: -30px;
     transform: translateX(-50%);
     background-color: var(--blue);
+    padding: 20px;
+
+    @mixin atMedium {
+      display: none;
+    }
+  }
+
+  &__rapha-logo {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+  }
+
+  &__ehl-logo {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    color: var(--light-gray);
+    font-weight: 200;
+    letter-spacing: 2px;
+
+    &__span {
+      display: block;
+      font-weight: 400;
+      margin: 5px 0;
+    }
+  }
+
+  &--hidden {
+    display: none;
+    @mixin atMedium {
+      display: initial;
+    }
   }
 }
