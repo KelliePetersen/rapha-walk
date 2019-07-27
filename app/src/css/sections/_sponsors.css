@@ -29,7 +29,7 @@
 
   &__image {
     display: block;
-    height: 200px;
+    height: 175px;
     background-color: var(--light-gray);
   }
 }
