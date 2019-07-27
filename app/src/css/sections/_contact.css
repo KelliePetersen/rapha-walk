@@ -7,6 +7,10 @@
     max-width: 670px;
     margin: 0 auto;
     text-align: center;
+
+    @mixin atMedium {
+      padding: 120px 0;
+    }
   }
 
   &__heading {
@@ -14,22 +18,19 @@
   }
 
   &__text {
-    display: none;
-    @mixin atMedium {
-      display: block;
-      margin: 40px 0;
-    }
+      margin: 30px 0 40px 0;
   }
 
   &__details {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 40px;
-    font-size: 1.125em;
-    font-weight: 400px;
-    color: var(--light-gray);
-    letter-spacing: 2px;
+    @mixin atMedium {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-top: 40px;
+      font-size: 1.125em;
+      color: var(--light-gray);
+      letter-spacing: 2px;
+    }
   }
 
   &__image {

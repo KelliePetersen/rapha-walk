@@ -22,24 +22,4 @@
       height: 3px;
     }
   }
-
-  &--hidden-at-s {
-    display: none;
-    @mixin atMedium {
-      display: block;
-    }
-  }
-
-  &--hidden-at-sm {
-    display: none;
-    @mixin atLarge {
-      display: block;
-    }
-  }
-
-  &--hidden-at-l {
-    @mixin atLarge {
-      display: none;
-    }
-  }
 }

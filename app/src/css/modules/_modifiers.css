@@ -1,0 +1,22 @@
+.hidden {
+  
+    &--at-s {
+    display: none;
+    @mixin atMedium {
+      display: block;
+    }
+  }
+
+  &--at-sm {
+    display: none;
+    @mixin atLarge {
+      display: block;
+    }
+  }
+
+  &--at-l {
+    @mixin atLarge {
+      display: none;
+    }
+  }
+}
