@@ -35,12 +35,30 @@
     line-height: 1.25;
     padding: 10px 20px;
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 
-    &__item {
-      margin: 5px 20px;
+    @mixin atMedium {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @mixin atLarge {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &__novelle {
+      @mixin atMedium {
+        text-align: right;
+      }
+      @mixin atLarge {
+        text-align: center;
+      }
+    }
+
+    &__policy {
+      padding: 12px 0;
+      @mixin atLarge {
+        text-align: right;
+      }
     }
   }
 }
