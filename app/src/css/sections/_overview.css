@@ -50,6 +50,7 @@
     font-weight: 500;
     line-height: 2;
     margin: 40px auto;
+    padding-left: 0;
     text-align: left;
 
     @mixin atMedium {
@@ -72,5 +73,14 @@
     @mixin atSmall {
       display: initial;
     }
+  }
+
+  &__icon {
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 33px;
+    height: 33px;
+    object-fit: contain;
+    margin-right: 10px;
   }
 }
