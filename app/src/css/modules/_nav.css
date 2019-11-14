@@ -2,27 +2,26 @@
 
   &__link {
     display: block;
-    width: 200px;
+    width: max-content;
     text-align: center;
     color: var(--white);
     text-decoration: none;
     font-weight: 500;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     margin: 0 auto;
+    border-radius: 10px;
   }
 
   &--small {
-    padding: 15px;
+    padding: 15px 30px;
     font-size: 0.75em;
-    letter-spacing: 3px;
     font-weight: 600;
     margin: 50px auto 70px auto;
 
     @mixin atMedium {
-      width: 240px;
       font-size: 1em;
-      padding: 20px;
-      margin-top: 80px;
+      padding: 20px 40px;
+      margin-top: 60px;
       margin-bottom: 120px;
     }
 
@@ -34,11 +33,23 @@
 
   &--black {
     color: var(--dark-gray);
-    border: 1.5px solid var(--dark-gray);
+    border: 2px solid var(--dark-gray);
+    transition: 0.3s;
+
+    &:hover {
+      background-color: var(--dark-gray);
+      color: var(--white);
+    }
   }
 
   &--white {
     background-color: var(--white);
     color: var(--black);
+    transition: 0.3s;
+
+    &:hover {
+      background-color: var(--dark-gray);
+      color: var(--white);
+    }
   }
 }
