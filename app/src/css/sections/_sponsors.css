@@ -17,7 +17,17 @@
     justify-content: center;
 
     @mixin atMedium {
-      margin-top: 80px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__uwg {
+    margin: 10px auto;
+    width: 80%;
+    max-width: 600px;
+
+    @mixin atMedium {
+      margin: 80px auto 50px auto;
     }
   }
 
@@ -30,6 +40,8 @@
   &__image {
     display: block;
     height: 175px;
-    background-color: var(--light-gray);
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
   }
 }
