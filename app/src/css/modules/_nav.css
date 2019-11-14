@@ -37,8 +37,9 @@
     transition: 0.3s;
 
     &:hover {
-      background-color: var(--dark-gray);
+      background-color: var(--blue);
       color: var(--white);
+      border-color: transparent;
     }
   }
 
@@ -48,7 +49,7 @@
     transition: 0.3s;
 
     &:hover {
-      background-color: var(--dark-gray);
+      background-color: var(--blue);
       color: var(--white);
     }
   }
