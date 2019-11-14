@@ -432,7 +432,219 @@ img {
     background-position: 0 97.91111111111111%;
   }
 
+.nav {
+  display: none;
+  width: 100%;
+  padding: 0 20px;
+  height: 70px;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 15;
+}
+
+@media (min-width: 1200px) {
+
+.nav {
+    height: 90px
+}
+  }
+
+.nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 10px auto;
+  }
+
+.nav__logo {
+
+  }
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+
+@media (min-width: 1200px) {
+
+.nav__list {
+      display: flex
+  }
+  }
+
+.nav__section {
+    margin: 25px;
+    list-style-type: none;
+  }
+
 .nav__link {
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--black);
+    transition: 0.25s;
+  }
+
+.nav__link:hover {
+      color: var(--blue);
+    }
+
+.nav__cta {
+    font-weight: 600;
+  }
+
+.nav--is-hidden {
+    display: block;
+    opacity: 0;
+  }
+
+.nav--is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+
+.menu {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+@media (min-width: 1200px) {
+
+.menu {
+    display: none
+}
+  }
+
+.menu__button {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 2px;
+    border: 10px solid transparent;
+    width: 45px;
+    height: 40px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    transition: 0.5s;
+  }
+
+.menu__line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--black);
+    border-radius: 10px;
+    -webkit-transform-origin: left center;
+            transform-origin: left center;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    transition: .3s;
+  }
+
+.menu__line:nth-child(1) {
+    top: 0px;
+  }
+
+.menu__line:nth-child(2) {
+    top: 8px;
+  }
+
+.menu__line:nth-child(3) {
+    top: 16px;
+  }
+
+.menu__button.open .menu__line:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: -2px;
+    left: 0;
+  }
+
+.menu__button.open .menu__line:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+
+.menu__button.open .menu__line:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 15px;
+    left: 0;
+  }
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80vw;
+  max-width: 500px;
+  height: 80vh;
+  max-height: 700px;
+  background-color: var(--white);
+  z-index: -1;
+  box-shadow: 0px 0px 10px var(--gray);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.modal__list {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    responsive-font-size: 2rem;
+    padding-left: 0;
+  }
+
+.modal--is-open {
+    opacity: 1;
+    z-index: 10;
+  }
+
+.back-to-top {
+  position: fixed;
+  bottom: 3%;
+  right: 5%;
+  z-index: 5;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgba(11, 11, 11, 0.25);
+  text-align: center;
+  color: var(--black);
+  background-color: var(--white);
+  opacity: 0.5;
+  font-size: 24px;
+  text-decoration: none;
+  padding-top: 4px;
+}
+
+@media (min-width: 1200px) {
+
+.back-to-top {
+    display: none
+}
+  }
+
+.back-to-top--hidden {
+    display: none;
+  }
+
+.button__link {
     display: block;
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -446,7 +658,7 @@ img {
     border-radius: 10px;
   }
 
-.nav--small {
+.button--small {
     padding: 15px 30px;
     font-size: 0.75em;
     font-weight: 600;
@@ -455,7 +667,7 @@ img {
 
 @media (min-width: 760px) {
 
-.nav--small {
+.button--small {
       font-size: 1em;
       padding: 20px 40px;
       margin-top: 60px;
@@ -465,31 +677,31 @@ img {
 
 @media (min-width: 1200px) {
 
-.nav--small {
+.button--small {
       margin-left: 0;
       margin-bottom: 0
   }
   }
 
-.nav--black {
+.button--black {
     color: var(--dark-gray);
     border: 2px solid var(--dark-gray);
     transition: 0.3s;
   }
 
-.nav--black:hover {
+.button--black:hover {
       background-color: var(--blue);
       color: var(--white);
       border-color: transparent;
     }
 
-.nav--white {
+.button--white {
     background-color: var(--white);
     color: var(--black);
     transition: 0.3s;
   }
 
-.nav--white:hover {
+.button--white:hover {
       background-color: var(--blue);
       color: var(--white);
     }

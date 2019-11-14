@@ -16,6 +16,39 @@
 </head>
 
 <body>
+
+  <nav class="nav">
+    <div class="nav__container">
+      <a href="index.html" class="nav__logo"><img src="src/img/logo.svg" alt="5k Rapha Walk Logo"></a>
+      <ul class="nav__list">
+        <li class="nav__section"><a class="nav__link" href="#overview">EVENT</a></li>
+        <li class="nav__section"><a class="nav__link" href="#sponsors">SPONSORS</a></li>
+        <li class="nav__section"><a class="nav__link" href="#contact">CONTACT</a></li>
+        <li class="nav__section"><a class="nav__link" href="donate.html">DONATE</a></li>
+        <li class="nav__section"><a class="nav__link nav__cta" href="register.html">REGISTER</a></li>
+      </ul>
+    </div>
+    <div class="menu">
+      <div class="menu__background"></div>
+      <div class="menu__button">
+        <div class="menu__line"></div>
+        <div class="menu__line"></div>
+        <div class="menu__line"></div>
+      </div>
+    </div>
+  </nav>
+  
+  <nav class="modal">
+    <ul class="modal__list">
+      <li class="nav__section"><a class="nav__link" href="#overview">EVENT</a></li>
+      <li class="nav__section"><a class="nav__link" href="#sponsors">SPONSORS</a></li>
+      <li class="nav__section"><a class="nav__link" href="#contact">CONTACT</a></li>
+      <li class="nav__section"><a class="nav__link" href="donate.html">DONATE</a></li>
+      <li class="nav__section"><a class="nav__link" href="register.html">REGISTER</a></li>
+    </ul>
+  </nav>
+  
+  <a class="back-to-top back-to-top--hidden" href=#home>&uarr;</a>
   
   <div class="hero">
     <img src="src/img/heading.jpg" alt="" class="hero__image">
@@ -24,11 +57,11 @@
       <div class="object__line"></div>
       <h1 class="hero__heading">RAPHA WALK <span class="hero__subheading">5k</span></h1>
       <p class="hero__text">11 APRIL 2020 <span class="hero--hidden">| CARROLLTON GA</span></p>
-      <a href="#" class="hero__link nav__link hidden--at-s">REGISTER</a>
+      <a href="#" class="hero__link button__link hidden--at-s">REGISTER</a>
     </div>
     <img class="hero__rapha-logo hidden--at-sm" src="src/img/rapha.webp" alt="Rapha Clinic logo">
     <p class="hero__ehl-logo hidden--at-sm">Organised by <span class="hero__ehl-logo__span">EMERGING HEALTHCARE LEADERS</span> of the University of West Georgia</p>
-    <a href="#" class="hero__mobile-link nav__link">REGISTER</a>
+    <a href="#" class="hero__mobile-link button__link">REGISTER</a>
   </div>
 
   <section class="intro">
@@ -42,7 +75,7 @@
         <p class="text__paragraph">The Rapha Walk is a 5 kilometer (3.1 miles) track along Carrollton's Green Belt. It begins at Hobbs Farm and loops
         around the surrounding area.</p>
       </div>
-      <a href="#overview" class="nav__link nav--small nav--black">LEARN MORE</a>
+      <a href="#overview" class="button__link button--small button--black">LEARN MORE</a>
     </div>
     <img src="src/img/man.jpg" alt="Man running along straight dirt path" class="intro__image">
   </section>
@@ -65,7 +98,7 @@
       <p class="text__paragraph text--light">Rapha Clinic provides medical and dental services to members of
       our community in need, at little to no cost to them. If you'd like to
       learn more about Rapha Clinic, visit their website.</p>
-      <a href="#participate" class="nav__link nav--small nav--white">HOW TO JOIN</a>
+      <a href="#participate" class="button__link button--small button--white">HOW TO JOIN</a>
     </div>
   </section>
 
@@ -91,12 +124,12 @@
           <p class="participate__list-text">Take the 5k at your own pace</p>
         </div>
       </div>
-      <a href="#" class="nav__link nav--small nav--black">REGISTER NOW</a>
+      <a href="#" class="button__link button--small button--black">REGISTER NOW</a>
     </div>
     <img src="src/img/boy.jpg" alt="" class="participate__image">
   </section>
 
-  <section class="sponsors">
+  <section class="sponsors" id="sponsors">
     <h2 class="text__heading">OUR SPONSORS</h2>
     <div class="object__short-line"></div>
     <div class="sponsors__uwg">
@@ -116,7 +149,7 @@
     <p class="text__paragraph">Want to grab a Sponsorship spot? Get in touch with us below.</p>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="contact">
     <img src="src/img/shoes.jpg" alt="" class="contact__image">
     <div class="contact__container">
       <h2 class="contact__heading text__heading">GET IN TOUCH</h2>
