@@ -84,7 +84,24 @@
   </section>
 
   <section class="overview" id="overview">
-    <img src="src/img/woman.jpg" alt="" class="overview__image">
+    <img class="overview__image" 
+          sizes="
+            (max-width: 300px) 300px, 
+            (max-width: 500px) 500px, 
+            (max-width: 750px) 750px, 
+            (max-width: 900px) 900px, 
+            (max-width: 1400px) 1400px, 
+            (max-width: 2000px) 2000px, 
+            3000px" 
+          srcset="
+            src/img/woman300.jpg 300w,
+            src/img/woman500.jpg 500w,
+            src/img/woman750.jpg 750w,
+            src/img/woman900.jpg 900w,
+            src/img/woman1400.jpg 1400w,
+            src/img/woman2000.jpg 2000w,
+            src/img/woman.jpg 3000w" 
+          src="src/img/woman.jpg" alt="">
     <div class="overview__textbox">
       <h2 class="text__heading overview__heading">EVENT OVERVIEW</h2>
       <ul class="overview__list">
