@@ -407,6 +407,10 @@ img {
   }
   }
 
+.social-icons__icon:hover {
+      background-color: var(--light-blue);
+    }
+
 .social-icons__icon .icon {
       display: block;
       position: absolute;

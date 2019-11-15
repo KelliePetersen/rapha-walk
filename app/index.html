@@ -77,7 +77,10 @@
       </div>
       <a href="#overview" class="button__link button--small button--black">LEARN MORE</a>
     </div>
-    <img src="src/img/man.jpg" alt="Man running along straight dirt path" class="intro__image">
+    <img class="intro__image" sizes="(max-width: 450px) 300px, 550px" 
+    srcset="src/img/man300.jpg 300w, src/img/man.jpg 550w" 
+    src="src/img/man.jpg" alt="Man running along straight dirt path">
+
   </section>
 
   <section class="overview" id="overview">
@@ -152,7 +155,24 @@
   </section>
 
   <section class="contact" id="contact">
-    <img src="src/img/shoes.jpg" alt="" class="contact__image">
+    <img class="contact__image" 
+    sizes="
+      (max-width: 300px) 300px, 
+      (max-width: 500px) 500px, 
+      (max-width: 750px) 750px, 
+      (max-width: 900px) 900px, 
+      (max-width: 1400px) 1400px, 
+      (max-width: 2000px) 2000px, 
+      3000px" 
+    srcset="
+      src/img/shoes300.jpg 300w,
+      src/img/shoes500.jpg 500w,
+      src/img/shoes750.jpg 750w,
+      src/img/shoes900.jpg 900w,
+      src/img/shoes1400.jpg 1400w,
+      src/img/shoes2000.jpg 2000w,
+      src/img/shoes.jpg 3000w"
+    src="src/img/shoes.jpg" alt="">
     <div class="contact__container">
       <h2 class="contact__heading text__heading">GET IN TOUCH</h2>
       <div class="object__line"></div>
@@ -198,7 +218,7 @@
         </div>
         <p class="footer__ehl">Organised by <span class="footer__ehl__span">EMERGING HEALTHCARE
           LEADERS</span> of the University of West Georgia</p>
-        <img src="src/img/rapha.svg" alt="Rapha Clinic of West Georgia" class="footer__rapha">
+        <a href="https://www.raphaclinic.org/" target="_blank"><img src="src/img/rapha.svg" alt="Rapha Clinic of West Georgia" class="footer__rapha"></a>
       </div>
     </div>
     <div class="footer__subfooter">
