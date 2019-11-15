@@ -18,7 +18,7 @@ class WidescreenMenu {
   }
 
   fixedMenu() {
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
       this.nav[0].classList.add('nav--is-fixed');
     } else {
       this.nav[0].classList.remove('nav--is-fixed');

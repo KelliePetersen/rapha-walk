@@ -438,8 +438,8 @@ img {
   padding: 0 20px;
   height: 70px;
   background-color: white;
-  position: absolute;
-  top: 0px;
+  position: fixed;
+  top: -200px;
   left: 0px;
   z-index: 15;
 }
@@ -498,16 +498,13 @@ img {
 
 .nav--is-hidden {
     display: block;
-    opacity: 0;
+    transition: 0.5s;
   }
 
 .nav--is-fixed {
-    position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
-    opacity: 1;
-    transition: opacity 0.5s;
+    transition: 0.5s;
   }
 
 .menu {
