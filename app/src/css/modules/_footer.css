@@ -38,12 +38,49 @@
     }
   }
 
+  &__subcontainer {
+    @mixin atLarge {
+      max-width: 1100px;
+      width: 100%;
+      padding: 0 20px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
   &__social {
     text-align: center;
 
     &__text {
       font-weight: 700;
       letter-spacing: 2px;
+
+      @mixin atLarge {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__ehl {
+    display: none;
+    @mixin atLarge {
+      display: block;
+      color: var(--black);
+      letter-spacing: 1px;
+    }
+
+    &__span {
+      display: block;
+      font-weight: 700;
+      margin: 5px 0;
+    }
+  }
+
+  &__rapha {
+    display: none;
+    @mixin atLarge {
+      display: block;
     }
   }
 
