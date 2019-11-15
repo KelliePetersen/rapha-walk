@@ -55,4 +55,8 @@
   &--light {
     color: var(--light-gray);
   }
+
+  &--bold {
+    font-weight: 700;
+  }
 }
