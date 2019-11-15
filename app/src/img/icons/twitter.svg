@@ -1,1 +1,67 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="51.78" height="42.06" viewBox="0 0 51.78 42.06"><defs><style>.cls-1{fill:#fff;}</style></defs><title>twitter</title><path class="cls-1" d="M51.78,5a22.23,22.23,0,0,1-5.32,5.52v1.38a30.15,30.15,0,0,1-1.25,8.53,30.81,30.81,0,0,1-3.76,8.13,32.1,32.1,0,0,1-6.06,6.92,27,27,0,0,1-8.48,4.8,31,31,0,0,1-10.62,1.8A29.47,29.47,0,0,1,0,37.29a22.71,22.71,0,0,0,2.56.13,20.78,20.78,0,0,0,13.17-4.53,10.63,10.63,0,0,1-9.92-7.36,13.45,13.45,0,0,0,2,.16,11,11,0,0,0,2.79-.36,10.44,10.44,0,0,1-6.09-3.67A10.25,10.25,0,0,1,2.1,14.91V14.78a10.52,10.52,0,0,0,4.8,1.34,10.6,10.6,0,0,1-3.45-3.78A10.34,10.34,0,0,1,2.17,7.27,10.4,10.4,0,0,1,3.62,1.94a30.08,30.08,0,0,0,9.71,7.83A29.57,29.57,0,0,0,25.53,13a11.79,11.79,0,0,1-.26-2.43,10.23,10.23,0,0,1,3-7.48,10.64,10.64,0,0,1,15,0l0.21,0.22A20.81,20.81,0,0,0,50.33.8a10.3,10.3,0,0,1-4.67,5.85A21.14,21.14,0,0,0,51.78,5Z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   width="36.912292"
+   height="30"
+   viewBox="0 0 36.912294 29.999999"
+   version="1.1"
+   sodipodi:docname="twitter.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata13">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>twitter</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1017"
+     id="namedview11"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="5.6110317"
+     inkscape:cx="-3.0708069"
+     inkscape:cy="21.050701"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#fff;}</style>
+  </defs>
+  <title
+     id="title6">twitter</title>
+  <path
+     class="cls-1"
+     d="m 36.912291,3.5663645 a 15.847049,15.847049 0 0 1 -3.792456,3.9350299 v 0.9837581 a 21.492963,21.492963 0 0 1 -0.891085,6.0807625 21.963455,21.963455 0 0 1 -2.680382,5.795613 22.883054,22.883054 0 0 1 -4.319979,4.933045 19.247429,19.247429 0 0 1 -6.045118,3.421766 22.0989,22.0989 0 0 1 -7.570656,1.283162 A 21.008212,21.008212 0 0 1 0,26.584864 16.189226,16.189226 0 0 0 1.8249415,26.677538 14.813392,14.813392 0 0 0 11.213409,23.448246 7.577784,7.577784 0 0 1 4.1417616,18.201539 9.5880711,9.5880711 0 0 0 5.567497,18.315598 7.8415451,7.8415451 0 0 0 7.556398,18.058967 7.4423392,7.4423392 0 0 1 3.2150335,15.442742 7.3068943,7.3068943 0 0 1 1.4970223,10.630885 V 10.53821 A 7.4993685,7.4993685 0 0 0 4.9187873,11.493453 7.556398,7.556398 0 0 1 2.4593937,8.7988134 7.3710524,7.3710524 0 0 1 1.546923,5.1845735 7.4138244,7.4138244 0 0 1 2.5805812,1.3849884 21.443061,21.443061 0 0 0 9.502527,6.9667432 21.079498,21.079498 0 0 0 18.199513,9.2693061 8.4047106,8.4047106 0 0 1 18.014168,7.5370369 7.2926369,7.2926369 0 0 1 20.152771,2.204787 a 7.5849126,7.5849126 0 0 1 10.693016,0 l 0.149702,0.1568305 a 14.834778,14.834778 0 0 0 4.883145,-1.78929869 7.3425377,7.3425377 0 0 1 -3.329093,4.17027679 15.070024,15.070024 0 0 0 4.36275,-1.1762311 z"
+     id="path8"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;stroke-width:1" />
+</svg>
