@@ -612,6 +612,11 @@ img {
     z-index: 10;
   }
 
+.modal__link {
+    font-size: 2rem;
+    margin: 40px 0;
+  }
+
 .back-to-top {
   position: fixed;
   bottom: 3%;
