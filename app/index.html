@@ -51,7 +51,21 @@
   <a class="back-to-top back-to-top--hidden" href=#home>&uarr;</a>
   
   <div class="hero">
-    <img src="src/img/heading.jpg" alt="" class="hero__image">
+    <img class="hero__image" 
+      sizes="
+        (max-width: 500px) 500px, 
+        (max-width: 750px) 750px, 
+        (max-width: 900px) 900px, 
+        (max-width: 1400px) 1400px, 
+        (max-width: 2000px) 2000px, 
+        3000px" 
+      srcset="
+        src/img/heading500.jpg 500w,
+        src/img/heading750.jpg 750w,
+        src/img/heading900.jpg 900w,
+        src/img/heading1400.jpg 1400w,
+        src/img/heading2000.jpg 2000w,
+        src/img/heading.jpg 3000w" src="src/img/heading.jpg" alt="">
     <div class="hero__content-box">
       <p class="hero__preheading">FIFTH ANNUAL</p>
       <div class="object__line"></div>
@@ -85,23 +99,23 @@
 
   <section class="overview" id="overview">
     <img class="overview__image" 
-          sizes="
-            (max-width: 300px) 300px, 
-            (max-width: 500px) 500px, 
-            (max-width: 750px) 750px, 
-            (max-width: 900px) 900px, 
-            (max-width: 1400px) 1400px, 
-            (max-width: 2000px) 2000px, 
-            3000px" 
-          srcset="
-            src/img/woman300.jpg 300w,
-            src/img/woman500.jpg 500w,
-            src/img/woman750.jpg 750w,
-            src/img/woman900.jpg 900w,
-            src/img/woman1400.jpg 1400w,
-            src/img/woman2000.jpg 2000w,
-            src/img/woman.jpg 3000w" 
-          src="src/img/woman.jpg" alt="">
+      sizes="
+        (max-width: 300px) 300px, 
+        (max-width: 500px) 500px, 
+        (max-width: 750px) 750px, 
+        (max-width: 900px) 900px, 
+        (max-width: 1400px) 1400px, 
+        (max-width: 2000px) 2000px, 
+        3000px" 
+      srcset="
+        src/img/woman300.jpg 300w,
+        src/img/woman500.jpg 500w,
+        src/img/woman750.jpg 750w,
+        src/img/woman900.jpg 900w,
+        src/img/woman1400.jpg 1400w,
+        src/img/woman2000.jpg 2000w,
+        src/img/woman.jpg 3000w" 
+      src="src/img/woman.jpg" alt="">
     <div class="overview__textbox">
       <h2 class="text__heading overview__heading">EVENT OVERVIEW</h2>
       <ul class="overview__list">
