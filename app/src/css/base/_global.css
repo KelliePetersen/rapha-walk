@@ -11,3 +11,7 @@ img {
 * {
   box-sizing: border-box;
 }
+
+html.sr .scroll-reveal, html.sr .scroll-reveal--up {
+  visibility: hidden;
+}
