@@ -41,7 +41,7 @@
     color: var(--black);
     transition: 0.25s;
 
-    &:hover {
+    &:hover, &:focus {
       color: var(--blue);
     }
   }

@@ -22,7 +22,7 @@
       margin: 0 10px 0 0;
     }
 
-    &:hover {
+    &:hover, &:focus {
       background-color: var(--dark-blue);
     }
 

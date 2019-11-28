@@ -415,7 +415,7 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
   }
   }
 
-.social-icons__icon:hover {
+.social-icons__icon:hover, .social-icons__icon:focus {
       background-color: var(--dark-blue);
     }
 
@@ -503,7 +503,7 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
     transition: 0.25s;
   }
 
-.nav__link:hover {
+.nav__link:hover, .nav__link:focus {
       color: var(--blue);
     }
 
