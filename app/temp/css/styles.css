@@ -765,6 +765,23 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
 }
   }
 
+.hero__top-padding {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    z-index: 5;
+  }
+
+@media (min-width: 760px) {
+
+.hero__top-padding {
+      height: 20px
+  }
+  }
+
 .hero__image {
     height: 100%;
     width: 100%;
@@ -1390,6 +1407,7 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
 
 .participate {
   margin-top: 80px;
+  overflow-x: hidden;
 
 }
 

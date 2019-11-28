@@ -1,5 +1,6 @@
 .participate {
   margin-top: 80px;
+  overflow-x: hidden;
 
   @mixin atMedium {
     margin-top: 120px;
