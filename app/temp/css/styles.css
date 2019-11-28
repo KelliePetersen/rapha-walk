@@ -359,6 +359,10 @@ template {
   --dark-gray: #4c4c4c;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #333;
@@ -730,7 +734,6 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
   width: calc(100% - 20px);
   height: 80vh;
   margin: 10px auto;
-  overflow: hidden;
 }
 
 @media (min-width: 760px) {
@@ -738,7 +741,8 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
 .hero {
     height: 96vh;
     margin-top: 20px;
-    width: calc(100% - 40px)
+    width: calc(100% - 40px);
+    overflow: hidden
 }
   }
 
@@ -749,11 +753,15 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
        object-fit: cover;
     -o-object-position: 50% bottom;
        object-position: 50% bottom;
-    -webkit-transform: translateY(var(--translateY)) scale(var(--scale));
-            transform: translateY(var(--translateY)) scale(var(--scale));
-    will-change: transform;
-    /* opacity: var(--opacity);
-    will-change: opacity; */
+  }
+
+@media (min-width: 760px) {
+
+.hero__image {
+      -webkit-transform: translateY(var(--translateY)) scale(var(--scale));
+              transform: translateY(var(--translateY)) scale(var(--scale));
+      will-change: transform
+  }
   }
 
 .hero__content-box {
