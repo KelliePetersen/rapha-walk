@@ -14,7 +14,7 @@ ScrollReveal().reveal('.scroll-reveal--up', {duration: 1000, distance: "50px", v
 ScrollReveal().reveal('.participate__list-item', {duration: 1000, distance: "50px", viewOffset: { bottom: 200 }, interval: 500, origin: 'right'});
 ScrollReveal().reveal('.sponsors__image', {delay: 500, duration: 1000, distance: "50px", viewOffset: { bottom: 200 }, interval: 500});
 
-const instance = basicScroll.create({
+const heroImageInstance = basicScroll.create({
   elem: document.querySelector('.hero__image'),
   from: 'middle-middle',
   to: 'bottom-top',
@@ -30,4 +30,30 @@ const instance = basicScroll.create({
   }
 });
 
-instance.start();
+const heroTextInstance = basicScroll.create({
+  elem: document.querySelector('.hero__text-container'),
+  from: 'top-middle',
+  to: 'bottom-top',
+  props: {
+    '--movement': {
+      from: '-50%',
+      to: `0%`
+    }
+  }
+});
+
+const heroLogosInstance = basicScroll.create({
+  elem: document.querySelector('.hero__logo-container'),
+  from: 'bottom-bottom',
+  to: 'bottom-middle',
+  props: {
+    '--opacity': {
+      from: 0.99,
+      to: 0.01
+    }
+  }
+});
+
+heroImageInstance.start();
+heroTextInstance.start();
+heroLogosInstance.start();

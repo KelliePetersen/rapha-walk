@@ -764,12 +764,12 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
   }
   }
 
-.hero__content-box {
+.hero__text-container {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
     color: var(--white);
     text-align: center;
     min-width: 300px;
@@ -778,8 +778,10 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
 
 @media (min-width: 760px) {
 
-.hero__content-box {
-      top: 45%
+.hero__text-container {
+      top: 45%;
+      -webkit-transform: translateX(-50%) translateY(var(--movement));
+              transform: translateX(-50%) translateY(var(--movement))
   }
   }
 
@@ -898,6 +900,11 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
       font-weight: 400;
       margin: 5px 0;
     }
+
+.hero__logo-container {
+    opacity: var(--opacity);
+    will-change: opacity;
+  }
 
 .hero--hidden {
     display: none;

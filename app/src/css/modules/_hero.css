@@ -23,17 +23,18 @@
     }
   }
 
-  &__content-box {
+  &__text-container {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%) translateY(-50%);
     color: var(--white);
     text-align: center;
     min-width: 300px;
     width: 90%;
     @mixin atMedium {
       top: 45%;
+      transform: translateX(-50%) translateY(var(--movement));
     }
   }
 
@@ -127,6 +128,11 @@
       font-weight: 400;
       margin: 5px 0;
     }
+  }
+
+  &__logo-container {
+    opacity: var(--opacity);
+    will-change: opacity;
   }
 
   &--hidden {
