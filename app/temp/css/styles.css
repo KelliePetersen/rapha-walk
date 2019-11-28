@@ -352,7 +352,7 @@ template {
 :root {
   --black: #4d4d4d;
   --blue: #2c8dd5;
-  --light-blue: #51b2fc;
+  --dark-blue: #1774bb;
   --white: #f9f9f9;
   --light-gray: #b3b3b3;
   --gray: #808080;
@@ -412,7 +412,7 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
   }
 
 .social-icons__icon:hover {
-      background-color: var(--light-blue);
+      background-color: var(--dark-blue);
     }
 
 .social-icons__icon .icon {
@@ -837,7 +837,7 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
   }
 
 .hero__link:hover {
-      background-color: var(--light-blue);
+      background-color: var(--dark-blue);
       transition: background 0.2s;
     }
 
@@ -1630,7 +1630,7 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
   }
 
 .contact__submit:hover {
-      background-color: var(--light-blue);
+      background-color: var(--dark-blue);
       transition: background 0.2s;
     }
 

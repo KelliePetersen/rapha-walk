@@ -78,7 +78,7 @@
     transition: background 0.2s;
 
     &:hover {
-      background-color: var(--light-blue);
+      background-color: var(--dark-blue);
       transition: background 0.2s;
     }
 

@@ -23,7 +23,7 @@
     }
 
     &:hover {
-      background-color: var(--light-blue);
+      background-color: var(--dark-blue);
     }
 
     .icon {
