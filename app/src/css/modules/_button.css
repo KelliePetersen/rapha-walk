@@ -1,6 +1,7 @@
 .button {
 
   &__link {
+    position: relative;
     display: block;
     width: max-content;
     text-align: center;
@@ -10,6 +11,22 @@
     letter-spacing: 2px;
     margin: 0 auto;
     border-radius: 10px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus&:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 10px;
+      border: 2px solid #ccc;
+    }
   }
 
   &--small {
@@ -36,7 +53,7 @@
     border: 2px solid var(--dark-gray);
     transition: 0.3s;
 
-    &:hover {
+    &:hover, &:focus {
       background-color: var(--blue);
       color: var(--white);
       border-color: transparent;
@@ -48,7 +65,7 @@
     color: var(--black);
     transition: 0.3s;
 
-    &:hover {
+    &:hover, &:focus {
       background-color: var(--blue);
       color: var(--white);
     }

@@ -84,7 +84,7 @@
     box-shadow: 2px 2px 5px #333;
     transition: background 0.2s;
 
-    &:hover {
+    &:hover, &:focus {
       background-color: var(--dark-blue);
       transition: background 0.2s;
     }

@@ -610,6 +610,7 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
   box-shadow: 0px 0px 10px var(--gray);
   opacity: 0;
   transition: opacity 0.5s;
+  visibility: hidden;
 }
 
 .modal__list {
@@ -625,6 +626,7 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
 .modal--is-open {
     opacity: 1;
     z-index: 10;
+    visibility: visible;
   }
 
 .modal__link {
@@ -668,6 +670,7 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
   }
 
 .button__link {
+    position: relative;
     display: block;
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -680,6 +683,22 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
     margin: 0 auto;
     border-radius: 10px;
   }
+
+.button__link:focus {
+      outline: none;
+    }
+
+.button__link:focus.button__link:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 10px;
+      border: 2px solid #ccc;
+    }
 
 .button--small {
     padding: 15px 30px;
@@ -712,7 +731,7 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
     transition: 0.3s;
   }
 
-.button--black:hover {
+.button--black:hover, .button--black:focus {
       background-color: var(--blue);
       color: var(--white);
       border-color: transparent;
@@ -724,7 +743,7 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
     transition: 0.3s;
   }
 
-.button--white:hover {
+.button--white:hover, .button--white:focus {
       background-color: var(--blue);
       color: var(--white);
     }
@@ -852,7 +871,7 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
     transition: background 0.2s;
   }
 
-.hero__link:hover {
+.hero__link:hover, .hero__link:focus {
       background-color: var(--dark-blue);
       transition: background 0.2s;
     }
@@ -1640,19 +1659,24 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
     background-color: var(--blue);
     color: var(--white);
     border-width: 0;
-    padding: 15px 0;
+    padding: 14px 0;
     width: 150px;
     margin: 5px 0 5px calc(100% - 150px);
     letter-spacing: 2px;
+    border: 2px solid var(--blue);
     border-radius: 10px;
     box-shadow: 2px 2px 5px #333;
     cursor: pointer;
     transition: background 0.2s;
   }
 
-.contact__submit:hover {
+.contact__submit:hover, .contact__submit:focus {
       background-color: var(--dark-blue);
       transition: background 0.2s;
+    }
+
+.contact__submit:focus {
+      border-color: #ccc;
     }
 
 .contact__submit:active {

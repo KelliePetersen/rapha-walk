@@ -64,18 +64,23 @@
     background-color: var(--blue);
     color: var(--white);
     border-width: 0;
-    padding: 15px 0;
+    padding: 14px 0;
     width: 150px;
     margin: 5px 0 5px calc(100% - 150px);
     letter-spacing: 2px;
+    border: 2px solid var(--blue);
     border-radius: 10px;
     box-shadow: 2px 2px 5px #333;
     cursor: pointer;
     transition: background 0.2s;
 
-  &:hover {
+    &:hover, &:focus {
       background-color: var(--dark-blue);
       transition: background 0.2s;
+    }
+
+    &:focus {
+      border-color: #ccc;
     }
 
     &:active {
