@@ -730,6 +730,7 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
   width: calc(100% - 20px);
   height: 80vh;
   margin: 10px auto;
+  overflow: hidden;
 }
 
 @media (min-width: 760px) {
@@ -748,6 +749,11 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
        object-fit: cover;
     -o-object-position: 50% bottom;
        object-position: 50% bottom;
+    -webkit-transform: translateY(var(--translateY)) scale(var(--scale));
+            transform: translateY(var(--translateY)) scale(var(--scale));
+    will-change: transform;
+    /* opacity: var(--opacity);
+    will-change: opacity; */
   }
 
 .hero__content-box {

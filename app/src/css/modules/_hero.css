@@ -3,6 +3,7 @@
   width: calc(100% - 20px);
   height: 80vh;
   margin: 10px auto;
+  overflow: hidden;
 
   @mixin atMedium {
     height: 96vh;
@@ -15,6 +16,10 @@
     width: 100%;
     object-fit: cover;
     object-position: 50% bottom;
+    transform: translateY(var(--translateY)) scale(var(--scale));
+    will-change: transform;
+    /* opacity: var(--opacity);
+    will-change: opacity; */
   }
 
   &__content-box {
