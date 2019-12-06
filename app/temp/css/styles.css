@@ -1706,7 +1706,19 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
 .register__nav {
     display: block;
     top: 0;
-    background-color: transparent;
+  }
+
+@media (min-width: 760px) {
+
+.register__nav {
+      background-color: transparent;
+      background-image: linear-gradient(to right, rgba(0,0,0,0) 20%, white 20%)
+  }
+  }
+
+.register__form {
+    max-width: 600px;
+    margin: 200px auto;
   }
 
 .register__footer {
@@ -1714,3 +1726,19 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
     display: block;
     font-size: 0.875em;
   }
+
+a:hover {
+  text-decoration: none;
+}
+
+label, legend {
+  font-weight: bold;
+}
+
+fieldset {
+  margin: 40px 0;
+}
+
+button {
+  height: 40px;
+}

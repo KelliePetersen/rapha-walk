@@ -15,14 +15,20 @@ window.onload = function() {
             key: 'fullName',
             label: 'Full Name',
             placeholder: 'Bob Smith',
-            input: true
+            input: true,
+            validate: {
+              required: true
+            }
           },
           {
             type: 'email',
             key: 'email',
             label: 'Email',
             placeholder: 'example@gmail.com',
-            input: true
+            input: true,
+            validate: {
+              required: true
+            }
           }
         ]
       },
@@ -38,10 +44,22 @@ window.onload = function() {
           {
             type: 'number',
             label: 'Number of Tickets',
+            placeholder: 1,
             input: true,
             validate: {
+              required: true,
               min: 1,
               max: 9
+            }
+          },
+          {
+            type: 'textfield',
+            key: 'ticket1',
+            label: 'Name on Ticket #1',
+            placeholder: 'Jane Doe',
+            input: true,
+            validate: {
+              required: true
             }
           }
         ]
@@ -58,22 +76,38 @@ window.onload = function() {
           {
             type: 'textfield',
             label: 'Name on Card',
-            input: true
+            placeholder: 'Bob Smith',
+            input: true,
+            validate: {
+              required: true
+            }
           },
           {
             type: 'textfield',
             label: 'Card Number',
-            input: true
+            placeholder: '1234-5678-9999-0000',
+            input: true,
+            validate: {
+              required: true
+            }
           },
           {
             type: 'textfield',
             label: 'Expiry Date',
-            input: true
+            placeholder: '01/21',
+            input: true,
+            validate: {
+              required: true
+            }
           },
           {
             type: 'textfield',
             label: 'CVC',
-            input: true
+            placeholder: '123',
+            input: true,
+            validate: {
+              required: true
+            }
           }
         ]
       },
@@ -82,7 +116,8 @@ window.onload = function() {
         type: 'button',
         action: 'submit',
         label: 'Submit',
-        theme: 'primary'
+        theme: 'primary',
+        block: true
       }
     ]
   })
