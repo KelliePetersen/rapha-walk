@@ -1,0 +1,16 @@
+.register {
+
+  &__nav {
+    display: block;
+    top: 0;
+    background-color: transparent;
+  }
+
+
+
+  &__footer {
+    text-align: center;
+    display: block;
+    font-size: 0.875em;
+  }
+}

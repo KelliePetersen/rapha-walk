@@ -10,6 +10,7 @@ gulp.task('watch', () => {
     }
   });
   watch('./app/index.html', () => browserSync.reload());
+  watch('./app/register.html', () => browserSync.reload());
   gulp.watch('./app/src/css/**/*.css', gulp.series('buildCSS', 'reloadCSS'));
   gulp.watch('./app/src/js/**/*.js').on('change', gulp.series('modernizr', 'buildJS', 'reloadJS'));
 });

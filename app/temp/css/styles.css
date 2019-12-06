@@ -1702,3 +1702,15 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
       top: 2px;
       box-shadow: 0px 0px 5px #333;
     }
+
+.register__nav {
+    display: block;
+    top: 0;
+    background-color: transparent;
+  }
+
+.register__footer {
+    text-align: center;
+    display: block;
+    font-size: 0.875em;
+  }
