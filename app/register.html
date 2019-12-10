@@ -25,12 +25,12 @@
 
   <nav class="nav register__nav">
     <div class="nav__container">
-      <a href="index.html" class="nav__logo"><img src="src/img/logo.svg" alt="5k Rapha Walk Logo"></a>
+      <a href="index.html" class="nav__logo"><img src="src/img/logo-white.svg" alt="5k Rapha Walk Logo"></a>
       <ul class="nav__list">
         <li class="nav__section"><a class="nav__link" href="#overview">EVENT</a></li>
         <li class="nav__section"><a class="nav__link" href="#sponsors">SPONSORS</a></li>
         <li class="nav__section"><a class="nav__link" href="#contact">CONTACT</a></li>
-        <li class="nav__section"><a class="nav__link" href="donate.html">DONATE</a></li>
+        <li class="nav__section"><a class="nav__link" href="https://www.raphaclinic.org/donate" target="_blank">DONATE</a></li>
         <li class="nav__section"><a class="nav__link nav__cta" href="register.html">REGISTER</a></li>
       </ul>
     </div>
@@ -53,6 +53,34 @@
       <li class="nav__section modal__link"><a class="nav__link" href="register.html">REGISTER</a></li>
     </ul>
   </nav>
+
+  <div class="sidebar">
+    <img class="sidebar__image" sizes="
+            (max-width: 500px) 500px, 
+            (max-width: 750px) 750px, 
+            (max-width: 900px) 900px, 
+            (max-width: 1400px) 1400px, 
+            (max-width: 2000px) 2000px, 
+            3000px" srcset="
+            src/img/heading500.jpg 500w,
+            src/img/heading750.jpg 750w,
+            src/img/heading900.jpg 900w,
+            src/img/heading1400.jpg 1400w,
+            src/img/heading2000.jpg 2000w,
+            src/img/heading.jpg 3000w" src="src/img/heading.jpg" alt="">
+    <div class="sidebar__list">
+      <img src="src/img/calendar.svg" alt="Date" class="sidebar__icon"><p><span class="sidebar__span">Sunday</span> April 11th, 2020</p> 
+      <img src="src/img/time.svg" alt="Time" class="sidebar__icon"><p><span class="sidebar__span">11am - 3pm</span> Last entry at 1pm</p>
+      <img src="src/img/map.svg" alt="Location" class="sidebar__icon"><p><span class="sidebar__span">Hobbs Farm Disc Golf Course</span> Carrollton GA</p>
+      <img src="src/img/dollar.svg" alt="Cost" class="sidebar__icon"><p><span class="sidebar__span">$15 early admission</span> $20 after April 1st</p>
+    </div>
+    <!-- <ul class="sidebar__list">
+      <li class="sidebar__list-item"><img src="src/img/calendar.svg" alt="Date" class="sidebar__icon">Sunday April 11th, 2020</li>
+      <li class="sidebar__list-item"><img src="src/img/time.svg" alt="Time" class="sidebar__icon">11am - 3pm<span>Last entry at 1pm</span></li>
+      <li class="sidebar__list-item"><img src="src/img/map.svg" alt="Location" class="sidebar__icon">Hobbs Farm Disc Golf Course</li>
+      <li class="sidebar__list-item"><img src="src/img/dollar.svg" alt="Cost" class="sidebar__icon">$20 ($15 before April 1st)</li>
+    </ul> -->
+  </div>
 
   <div class="register__form">
       <div id="formio"></div>

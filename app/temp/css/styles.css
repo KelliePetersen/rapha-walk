@@ -1241,6 +1241,59 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
   }
   }
 
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 500px;
+}
+
+@media (min-width: 1200px) {
+
+.sidebar {
+    display: block
+}
+  }
+
+.sidebar__image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
+    height: 100%;
+  }
+
+.sidebar__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: -webkit-max-content auto;
+    grid-template-columns: max-content auto;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 10px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    font-weight: 500;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+  }
+
+.sidebar__icon {
+    height: 50px;
+    margin: 0 auto;
+  }
+
+.sidebar__span {
+    display: block;
+  }
+
 .intro {
   display: grid;
   margin-top: 70px;

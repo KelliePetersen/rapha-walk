@@ -1,0 +1,42 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 500px;
+
+  @mixin atLarge {
+    display: block;
+  }
+
+  &__image {
+    object-fit: cover;
+    object-position: left;
+    height: 100%;
+  }
+
+  &__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: max-content auto;
+    column-gap: 20px;
+    row-gap: 10px;
+    width: max-content;
+    font-weight: 500;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+  }
+
+  &__icon {
+    height: 50px;
+    margin: 0 auto;
+  }
+
+  &__span {
+    display: block;
+  }
+}
