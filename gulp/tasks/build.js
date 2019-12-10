@@ -39,10 +39,10 @@ gulp.task('minifyImages', () =>
 );
 
 gulp.task('usemin', () =>
-  gulp.src('./app/index.html')
+  gulp.src('./app/*.html')
     .pipe(usemin({
-      css: [cleanCSS({ compatibility: 'ie8' }), rev()],
-      html: [htmlmin({ collapseWhitespace: true })],
+      css: [function() {return cleanCSS({ compatibility: 'ie8' })}, function() {return rev()}],
+      html: [function() {return htmlmin({ collapseWhitespace: true })}],
       js: [function() {return rev()}, function() {return uglify()}]
     }))
     .pipe(gulp.dest('./docs'))
