@@ -11,14 +11,16 @@
   }
 
   &__heading {
-    margin-left: 10%;
-    margin-bottom: 80px;
-    width: 100%;
-    max-width: 600px;
+    margin: 0 auto 80px auto;
+    width: 600px;
+    max-width: 96%;
     color: var(--blue);
     font-size: 2.5rem;
     letter-spacing: 0.5px;
     padding-left: 12px;
+    @mixin atLarge {
+      margin-left: 10%;
+    }
   }
 
   &__subheading {
@@ -29,12 +31,18 @@
   }
 
   &__container {
-    margin: 200px auto 100px 450px;
+    margin: 200px auto;
+    @mixin atLarge {
+      margin: 200px auto 100px 450px;
+    }
   }
 
   &__form {
+    margin: 0 auto;
     max-width: 600px;
-    margin-left: 10%;
+    @mixin atLarge {
+      margin-left: 10%;
+    }
   }
 
   &__footer {
@@ -60,3 +68,6 @@ button {
   height: 50px;
 }
 
+.modal {
+  display: block;
+}

@@ -1248,6 +1248,7 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
   }
 
 .sidebar {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -1265,9 +1266,10 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
 .sidebar__image {
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: left;
-       object-position: left;
+    -o-object-position: left 100%;
+       object-position: left 100%;
     height: 100%;
+    width: 100%;
   }
 
 .sidebar__list {
@@ -1780,14 +1782,20 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
   }
 
 .register__heading {
-    margin-left: 10%;
-    margin-bottom: 80px;
-    width: 100%;
-    max-width: 600px;
+    margin: 0 auto 80px auto;
+    width: 600px;
+    max-width: 96%;
     color: var(--blue);
     font-size: 2.5rem;
     letter-spacing: 0.5px;
     padding-left: 12px;
+  }
+
+@media (min-width: 1200px) {
+
+.register__heading {
+      margin-left: 10%
+  }
   }
 
 .register__subheading {
@@ -1798,12 +1806,26 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
   }
 
 .register__container {
-    margin: 200px auto 100px 450px;
+    margin: 200px auto;
+  }
+
+@media (min-width: 1200px) {
+
+.register__container {
+      margin: 200px auto 100px 450px
+  }
   }
 
 .register__form {
+    margin: 0 auto;
     max-width: 600px;
-    margin-left: 10%;
+  }
+
+@media (min-width: 1200px) {
+
+.register__form {
+      margin-left: 10%
+  }
   }
 
 .register__footer {
@@ -1826,4 +1848,8 @@ fieldset {
 
 button {
   height: 50px;
+}
+
+.modal {
+  display: block;
 }

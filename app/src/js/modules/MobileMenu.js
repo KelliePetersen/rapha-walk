@@ -1,7 +1,6 @@
 class MobileMenu {
   constructor() {
     this.menuIcon = document.getElementsByClassName('menu__button');
-    this.listItem = document.getElementsByClassName('menu__link');
     this.modal = document.getElementsByClassName('modal');
     this.events();
   }
