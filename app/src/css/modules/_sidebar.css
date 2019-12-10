@@ -3,7 +3,7 @@
   left: 0;
   top: 0;
   height: 100%;
-  width: 500px;
+  width: 450px;
 
   @mixin atLarge {
     display: block;
@@ -27,7 +27,7 @@
     row-gap: 10px;
     width: max-content;
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     letter-spacing: 1px;
   }
 

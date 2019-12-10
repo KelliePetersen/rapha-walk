@@ -1,17 +1,40 @@
 .register {
+  position: relative;
 
   &__nav {
     display: block;
     top: 0;
     @mixin atMedium {
       background-color: transparent;
-      background-image: linear-gradient(to right, rgba(0,0,0,0) 20%, white 20%);
+      background-image: linear-gradient(to right, rgba(0,0,0,0) 450px, white 450px);
     }
+  }
+
+  &__heading {
+    margin-left: 10%;
+    margin-bottom: 80px;
+    width: 100%;
+    max-width: 600px;
+    color: var(--blue);
+    font-size: 2.5rem;
+    letter-spacing: 0.5px;
+    padding-left: 12px;
+  }
+
+  &__subheading {
+    display: block;
+    color: var(--dark-gray);
+    font-size: 1.25rem;
+    margin-left: 1px;
+  }
+
+  &__container {
+    margin: 200px auto 100px 450px;
   }
 
   &__form {
     max-width: 600px;
-    margin: 200px auto;
+    margin-left: 10%;
   }
 
   &__footer {
@@ -34,6 +57,6 @@ fieldset {
 }
 
 button {
-  height: 40px;
+  height: 50px;
 }
 

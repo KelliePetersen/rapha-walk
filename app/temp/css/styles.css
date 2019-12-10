@@ -474,8 +474,14 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1400px;
     margin: 10px auto;
+  }
+
+@media (min-width: 1200px) {
+
+.nav__container {
+      max-width: 96%
+  }
   }
 
 .nav__list {
@@ -1246,7 +1252,7 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
   left: 0;
   top: 0;
   height: 100%;
-  width: 500px;
+  width: 450px;
 }
 
 @media (min-width: 1200px) {
@@ -1281,7 +1287,7 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
     width: -moz-max-content;
     width: max-content;
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     letter-spacing: 1px;
   }
 
@@ -1756,6 +1762,10 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
       box-shadow: 0px 0px 5px #333;
     }
 
+.register {
+  position: relative;
+}
+
 .register__nav {
     display: block;
     top: 0;
@@ -1765,13 +1775,35 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
 
 .register__nav {
       background-color: transparent;
-      background-image: linear-gradient(to right, rgba(0,0,0,0) 20%, white 20%)
+      background-image: linear-gradient(to right, rgba(0,0,0,0) 450px, white 450px)
   }
+  }
+
+.register__heading {
+    margin-left: 10%;
+    margin-bottom: 80px;
+    width: 100%;
+    max-width: 600px;
+    color: var(--blue);
+    font-size: 2.5rem;
+    letter-spacing: 0.5px;
+    padding-left: 12px;
+  }
+
+.register__subheading {
+    display: block;
+    color: var(--dark-gray);
+    font-size: 1.25rem;
+    margin-left: 1px;
+  }
+
+.register__container {
+    margin: 200px auto 100px 450px;
   }
 
 .register__form {
     max-width: 600px;
-    margin: 200px auto;
+    margin-left: 10%;
   }
 
 .register__footer {
@@ -1793,5 +1825,5 @@ fieldset {
 }
 
 button {
-  height: 40px;
+  height: 50px;
 }
