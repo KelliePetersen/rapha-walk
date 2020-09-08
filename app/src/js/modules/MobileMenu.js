@@ -2,17 +2,16 @@ class MobileMenu {
   constructor() {
     this.menuIcon = document.getElementsByClassName('menu__button');
     this.modal = document.getElementsByClassName('modal');
+    this.modalItem = document.getElementsByClassName('nav__link');
     this.events();
   }
 
   events() {
     this.menuIcon[0].addEventListener("click", this.animateMenu.bind(this));
     this.menuIcon[0].addEventListener("click", this.toggleModal.bind(this));
-    this.modal[0].addEventListener("click", (event) => {
-      if (event.target.classList.contains('modal__link')) {
-        this.closeMenu();
-      }
-    });
+    window.addEventListener('scroll', this.closeMenu.bind(this));
+    window.addEventListener('resize', this.closeMenu.bind(this));
+    Array.from(this.modalItem).forEach(item => item.addEventListener("click", this.closeMenu.bind(this)));
   }
 
   animateMenu() {
