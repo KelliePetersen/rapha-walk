@@ -92,14 +92,14 @@
 
   &__link {
     position: relative;
-    background-color: var(--blue);
+    background-color: var(--dark-blue);
     padding: 20px 60px;
     margin-top: 80px;
     box-shadow: 2px 2px 5px #333;
     transition: background 0.2s;
 
     &:hover, &:focus {
-      background-color: var(--dark-blue);
+      background-color: var(--blue);
       transition: background 0.2s;
     }
 
@@ -115,7 +115,7 @@
     left: 50%;
     bottom: -30px;
     transform: translateX(-50%);
-    background-color: var(--blue);
+    background-color: var(--dark-blue);
     padding: 20px 40px;
 
     @mixin atMedium {
