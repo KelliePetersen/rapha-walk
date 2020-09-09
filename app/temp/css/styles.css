@@ -352,7 +352,7 @@ template {
 :root {
   --black: #4d4d4d;
   --blue: #2c8dd5;
-  --dark-blue: #1774bb;
+  --dark-blue: #135f99;
   --white: #f9f9f9;
   --light-gray: #b3b3b3;
   --gray: #808080;
@@ -873,7 +873,7 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
 
 .hero__link {
     position: relative;
-    background-color: var(--blue);
+    background-color: var(--dark-blue);
     padding: 20px 60px;
     margin-top: 80px;
     box-shadow: 2px 2px 5px #333;
@@ -881,7 +881,7 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
   }
 
 .hero__link:hover, .hero__link:focus {
-      background-color: var(--dark-blue);
+      background-color: var(--blue);
       transition: background 0.2s;
     }
 
@@ -896,7 +896,7 @@ html.sr .scroll-reveal, html.sr .scroll-reveal--up {
     left: 50%;
     bottom: -30px;
     transform: translateX(-50%);
-    background-color: var(--blue);
+    background-color: var(--dark-blue);
     padding: 20px 40px;
   }
 
