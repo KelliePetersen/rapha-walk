@@ -98,10 +98,10 @@
       <a href="#overview" class="button__link button--small button--black">LEARN MORE</a>
     </div>
     <img 
-      class="intro__image" 
-      sizes="(max-width: 450px) 300px, 550px" 
-      srcset="src/img/man300.jpg 300w, src/img/man.jpg 550w" 
-      src="src/img/man.jpg" 
+      class="intro__image lazyload" 
+      data-sizes="(max-width: 450px) 300px, 550px" 
+      data-srcset="src/img/man300.jpg 300w, src/img/man.jpg 550w" 
+      data-src="src/img/man.jpg" 
       alt="Man running along straight dirt path"
     >
 
@@ -109,8 +109,8 @@
 
   <section class="overview" id="overview">
     <img 
-      class="overview__image" 
-      sizes="
+      class="overview__image lazyload" 
+      data-sizes="
         (max-width: 300px) 300px, 
         (max-width: 500px) 500px, 
         (max-width: 750px) 750px, 
@@ -118,7 +118,7 @@
         (max-width: 1400px) 1400px, 
         (max-width: 2000px) 2000px, 
         3000px" 
-      srcset="
+      data-srcset="
         src/img/woman300.jpg 300w,
         src/img/woman500.jpg 500w,
         src/img/woman750.jpg 750w,
@@ -126,17 +126,17 @@
         src/img/woman1400.jpg 1400w,
         src/img/woman2000.jpg 2000w,
         src/img/woman.jpg 3000w" 
-      src="src/img/woman.jpg" 
+      data-src="src/img/woman.jpg" 
       alt="A photo of a woman jogging at Hobbs Farm"
     >
     <div class="overview__textbox scroll-reveal--up">
       <h2 class="text__heading overview__heading">EVENT OVERVIEW</h2>
       <ul class="overview__list">
-        <li class="overview__list-item"><img src="src/img/calendar.svg" alt="" class="overview__icon"><span class="overview__list-item-title">DATE</span> Sunday April 11th, 2020</li>
-        <li class="overview__list-item"><img src="src/img/map.svg" alt="" class="overview__icon"><span class="overview__list-item-title">LOCATION</span> Hobbs Farm Disc Golf Course</li>
-        <li class="overview__list-item"><img src="src/img/running.svg" alt="" class="overview__icon"><span class="overview__list-item-title">DISTANCE</span> 5 kilometers (3.1 miles)</li>
-        <li class="overview__list-item"><img src="src/img/time.svg" alt="" class="overview__icon"><span class="overview__list-item-title">SCHEDULE</span> 11am - 3pm</li>
-        <li class="overview__list-item"><img src="src/img/dollar.svg" alt="" class="overview__icon"><span class="overview__list-item-title">COST</span> $20 ($15 before April 1st)</li>
+        <li class="overview__list-item"><img data-src="src/img/calendar.svg" alt="" class="overview__icon lazyload"><span class="overview__list-item-title">DATE</span> Sunday April 11th, 2020</li>
+        <li class="overview__list-item"><img data-src="src/img/map.svg" alt="" class="overview__icon lazyload"><span class="overview__list-item-title">LOCATION</span> Hobbs Farm Disc Golf Course</li>
+        <li class="overview__list-item"><img data-src="src/img/running.svg" alt="" class="overview__icon lazyload"><span class="overview__list-item-title">DISTANCE</span> 5 kilometers (3.1 miles)</li>
+        <li class="overview__list-item"><img data-src="src/img/time.svg" alt="" class="overview__icon lazyload"><span class="overview__list-item-title">SCHEDULE</span> 11am - 3pm</li>
+        <li class="overview__list-item"><img data-src="src/img/dollar.svg" alt="" class="overview__icon lazyload"><span class="overview__list-item-title">COST</span> $20 ($15 before April 1st)</li>
       </ul>
       <div class="overview__description">
         <div class="overview__subheading">
@@ -161,28 +161,28 @@
       </p>
       <div class="participate__list">
         <div class="participate__list-item scroll-reveal">
-          <img class="participate__icon" src="src/img/one.svg" alt=""></img>
+          <img class="participate__icon lazyload" data-src="src/img/one.svg" alt=""></img>
           <p class="participate__list-text">Register your spot now or at the event</p>
         </div>
         <div class="participate__list-item scroll-reveal">
-          <img class="participate__icon" src="src/img/two.svg" alt=""></img>
+          <img class="participate__icon lazyload" data-src="src/img/two.svg" alt=""></img>
           <p class="participate__list-text">Early arrivals get a free Rapha Walk shirt</p>
         </div>
         <div class="participate__list-item scroll-reveal">
-          <img class="participate__icon" src="src/img/three.svg" alt=""></img>
+          <img class="participate__icon lazyload" data-src="src/img/three.svg" alt=""></img>
           <p class="participate__list-text">Take the 5k at your own pace</p>
         </div>
       </div>
       <a href="/register.html" class="button__link button--small button--black">REGISTER NOW</a>
     </div>
-    <img src="src/img/boy.jpg" alt="A photo of a boy jogging" class="participate__image">
+    <img data-src="src/img/boy.jpg" alt="A photo of a boy jogging" class="participate__image lazyload">
   </section>
 
   <section class="sponsors" id="sponsors">
     <h2 class="text__heading scroll-reveal--up">OUR SPONSORS</h2>
     <div class="object__short-line scroll-reveal--up"></div>
     <div class="sponsors__uwg">
-      <img src="src/img/uwg.svg" class="sponsors__image scroll-reveal" alt="University of West Georgia"></img>
+      <img data-src="src/img/uwg.svg" class="sponsors__image scroll-reveal" alt="University of West Georgia"></img>
     </div>
     <div class="sponsors__container">
       <div class="sponsors__section">
@@ -200,8 +200,8 @@
 
   <section class="contact" id="contact">
     <img 
-      class="contact__image" 
-      sizes="
+      class="contact__image lazyload" 
+      data-sizes="
         (max-width: 300px) 300px, 
         (max-width: 500px) 500px, 
         (max-width: 750px) 750px, 
@@ -209,7 +209,7 @@
         (max-width: 1400px) 1400px, 
         (max-width: 2000px) 2000px, 
         3000px" 
-      srcset="
+      data-srcset="
         src/img/shoes300.jpg 300w,
         src/img/shoes500.jpg 500w,
         src/img/shoes750.jpg 750w,
@@ -217,7 +217,7 @@
         src/img/shoes1400.jpg 1400w,
         src/img/shoes2000.jpg 2000w,
         src/img/shoes.jpg 3000w"
-      src="src/img/shoes.jpg" 
+      data-src="src/img/shoes.jpg" 
       alt="A photo taken from the ground of a man jogging in a park"
     >
     <div class="contact__container scroll-reveal--up">
@@ -248,7 +248,7 @@
   <footer class="footer">
     <div class="footer__container">
       <div class="footer__nav">
-        <a href="#home" aria-label="5k Rapha Walk Home"><img src="src/img/logo.svg" alt="5k Rapha Walk Logo"></a>
+        <a href="#home" aria-label="5k Rapha Walk Home"><img data-src="src/img/logo.svg" alt="5k Rapha Walk Logo" class="lazyload"></a>
         <ul class="nav__list footer__list">
           <li class="nav__section"><a class="nav__link text--bold" href="#overview">EVENT</a></li>
           <li class="nav__section"><a class="nav__link text--bold" href="#sponsors">SPONSORS</a></li>
@@ -268,7 +268,7 @@
         </div>
         <p class="footer__ehl">Organised by <span class="footer__ehl__span">EMERGING HEALTHCARE
           LEADERS</span> of the University of West Georgia</p>
-        <a href="https://www.raphaclinic.org/" target="_blank" rel="noopener noreferrer" aria-label="Rapha Clinic Website"><img src="src/img/rapha.svg" alt="Rapha Clinic of West Georgia" class="footer__rapha"></a>
+        <a href="https://www.raphaclinic.org/" target="_blank" rel="noopener noreferrer" aria-label="Rapha Clinic Website"><img data-src="src/img/rapha.svg" alt="Rapha Clinic of West Georgia" class="footer__rapha lazyload"></a>
       </div>
     </div>
     <div class="footer__subfooter">
